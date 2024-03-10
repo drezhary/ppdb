@@ -86,7 +86,7 @@
             <h1>Input Buku Besar</h1>
             <!-- Form Buku Besar -->
             <div class="inputbuku">
-                <h1>Registrasi</h1>
+                <h2>Registrasi</h2>
                 <form action="#">
                     <table class="form-table">
                         <tr>
@@ -100,9 +100,9 @@
                         <tr>
                             <td><label for="jnskelamin">Jenis Kelamin</label></td>
                             <td>
-                                <input type="radio">
+                                <input type="radio" id="laki-laki" name="jnskelamin" value="laki-laki">
                                 <label for="lakilaki">Laki - laki</label>
-                                <input type="radio">
+                                <input type="radio" id="perempuan" name="jnskelamin" value="perempuan">
                                 <label for="perempuan">Perempuan</label>
                             </td>
                         </tr>
@@ -127,7 +127,8 @@
                                     <option>L</option>
                                     <option>XL</option>
                                     <option>XXL</option>
-                                    <option>XXXL</option>
+                                    <option>3XL</option>
+                                    <option>4XL</option>
                                 </select>
                             </td>
                         </tr>
@@ -140,16 +141,176 @@
                             <td><input type="text" id="alamat"></td>
                         </tr>
                         <tr>
-                            <td rowspan="2">
+                            <td rowspan="1">
                                 <label for="rt">RT /</label>
                                 <label for="rw"> RW</label>
                             </td>
 
-                            <td rowspan="2">
+                            <td rowspan="1">
                                 <input type="text" id="rt">
                                 <input type="text" id="rw">
                             </td>
-
+                        </tr>
+                        <tr>
+                            <td><label for="kelurahan">Kelurahan</label></td>
+                            <td><input type="text" id="kelurahan"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="kecamatan">Kecamatan</label></td>
+                            <td><input type="text" id="kecamatan"></td>
+                        </tr>
+                    </table>
+                    <h2>Pembayaran</h2>
+                    <table class="form-table">
+                        <tr>
+                            <td class="labelpembayaran">
+                                <label for="pembayaran">Formulir</label>
+                            </td>
+                            <td>
+                                <input type="text" id="pembayaran">
+                            </td>
+                            <td>
+                                <label for="biayaformulir"> / Rp15000</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="pembayaran">Test</label>
+                            </td>
+                            <td>
+                                <input type="text" id="pembayaran">
+                            </td>
+                            <td>
+                                <label for="biayaptest"> / Rp175000</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="pembayaran">LKS</label>
+                            </td>
+                            <td>
+                                <input type="text" id="pembayaran">
+                            </td>
+                            <td>
+                                <label for="biayaLKS"> / Rp180000</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="pembayaran">SPP Juli</label>
+                            </td>
+                            <td>
+                                <input type="text" id="pembayaran">
+                            </td>
+                            <td>
+                                <label for="biayaspp"> / Rp225000</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="pembayaran">Seragam</label>
+                            </td>
+                            <td>
+                                <input type="text" id="pembayaran">
+                            </td>
+                            <td><label for="biayaseragam"> / Rp900000</label></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="pembayaran">Rapor</label>
+                            </td>
+                            <td>
+                                <input type="text" id="pembayaran">
+                            </td>
+                            <td>
+                                <label for="biayarapor"> / Rp100000</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="pembayaran">MOPDB</label>
+                            </td>
+                            <td>
+                                <input type="text" id="pembayaran">
+                            </td>
+                            <td>
+                                <label for="biayamopdb"> / Rp250000</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="pembayaran">Praktek</label>
+                            </td>
+                            <td>
+                                <input type="text" id="pembayaran">
+                            </td>
+                            <td><label for="biayapraktek"> / Rp500000</label></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="pembayaran">Awal Tahun</label>
+                            </td>
+                            <td>
+                                <input type="text" id="pembayaran">
+                            </td>
+                            <td>
+                                <label for="biayaawal"> / Rp500000</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="pembayaran">OSIS</label>
+                            </td>
+                            <td>
+                                <input type="text" id="pembayaran">
+                            </td>
+                            <td>
+                                <label for="biayaosis"> / Rp300000</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="pembayaran">Asuransi</label>
+                            </td>
+                            <td>
+                                <input type="text" id="pembayaran">
+                            </td>
+                            <td>
+                                <label for="biayaasuransi"> / Rp100000</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="pembayaran">Ekskul</label>
+                            </td>
+                            <td>
+                                <input type="text" id="pembayaran">
+                            </td>
+                            <td>
+                                <label for="biayaekskul"> / Rp250000</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="pembayaran">Total</label>
+                            </td>
+                            <td>
+                                <input type="text" id="pembayaran">
+                            </td>
+                            <td>
+                                <label for="biayatotal"> / Rp3530000</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="pembayaran">Tanggal Pembayaran</label>
+                            </td>
+                            <td>
+                                <input type="date" name="tglregis" id="pembayaran">
+                            </td>
+                        </tr>
+                        <tr align="center">
+                            <td colspan="4"><button type="submit">Daftar</button></td>
                         </tr>
                     </table>
                 </form>

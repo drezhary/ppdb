@@ -613,6 +613,10 @@ main .inputbuku {
     font-size: 1.3rem;
 }
 
+.form-table {
+    width: 100%;
+}
+
 label {
     display: inline-flexbox;
     margin-bottom: 5px;
@@ -622,7 +626,10 @@ label {
 #kompkeahlian,
 #ukuranseragam,
 #asalsmp,
-#alamat {
+#alamat,
+#formulir,
+#kelurahan,
+#kecamatan {
     width: 100%;
     padding: 8px;
     border: 1px solid #ccc;
@@ -638,4 +645,25 @@ label {
     border: 1px solid #ccc;
     border-radius: var(--border-radius-1);
     font-size: 1.3rem;
+}
+
+#pembayaran {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius-1);
+    font-size: 1.3rem;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
 }
