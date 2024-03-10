@@ -597,23 +597,45 @@ main .total h2 {
 }
 
 /* Style for inputbuku.html */
-
 main .inputbuku {
-    margin-top: 2rem;
-}
-
-main .inputbuku #registrasi {
     background-color: var(--color-white);
     padding: var(--card-padding);
     border-radius: var(--card-border-radius);
     margin-top: 1rem;
     box-shadow: var(--box-shadow);
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     flex-wrap: wrap;
     gap: 1.4rem;
-    cursor: pointer;
     transition: all 0.3 ease;
     width: auto;
     height: auto;
+    font-size: 1.3rem;
+}
+
+label {
+    display: inline-flexbox;
+    margin-bottom: 5px;
+}
+
+#namalengkap,
+#kompkeahlian,
+#ukuranseragam,
+#asalsmp,
+#alamat {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius-1);
+    font-size: 1.3rem;
+}
+
+#nopendaftaran,
+#rt,
+#rw {
+    width: 15%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius-1);
+    font-size: 1.3rem;
 }

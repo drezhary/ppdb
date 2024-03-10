@@ -86,34 +86,72 @@
             <h1>Input Buku Besar</h1>
             <!-- Form Buku Besar -->
             <div class="inputbuku">
-                <form id=registrasi>
-                    <fieldset>
-                        <legend>
-                            <h2>Registrasi</h2>
-                        </legend>
-                        <label for="nopendaftaran">No Pendaftaran</label>
-                        <input type="text">
-                        <label for="namalengkap">Nama Lengkap</label>
-                        <input type="text">
-                        <div>
-                            <p>Jenis Kelamin : </p>
-                            <input type="radio" id="laki-laki" name="jnskelamin" value="Laki-Laki">
-                            <label for="laki-laki">Laki-Laki</label><br>
-                            <input type="radio" id="perempuan" name="jnskelamin" value="Perempuan">
-                            <label for="perempuan">Perempuan</label><br>
-                        </div>
-                        <p>Ukuran Seragam</p>
-                        <label for="ukuranseragam">Ukuran Seragam</label>
-                        <select name="seragam">
-                            <option>S</option>
-                            <option>M</option>
-                            <option>L</option>
-                            <option>XL</option>
-                            <option>XXL</option>
-                            <option>XXXL</option>
-                        </select>
+                <h1>Registrasi</h1>
+                <form action="#">
+                    <table class="form-table">
+                        <tr>
+                            <td><label for="nopendaftaran">No. Pendaftaran</label></td>
+                            <td><input type="text" id="nopendaftaran"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="namalengkap">Nama Lengkap</label></td>
+                            <td colspan="2"><input type="text" id="namalengkap"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="jnskelamin">Jenis Kelamin</label></td>
+                            <td>
+                                <input type="radio">
+                                <label for="lakilaki">Laki - laki</label>
+                                <input type="radio">
+                                <label for="perempuan">Perempuan</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="kompkeahlian">Kompetensi Keahlian</label></td>
+                            <td>
+                                <select id="kompkeahlian">
+                                    <option>Teknik Otomotif</option>
+                                    <option>Teknik Jaringan Komputer dan Telekomunikasi </option>
+                                    <option>Pengembangan Perangkat Lunak dan Gim</option>
+                                    <option>Akuntansi dan Keuangan Lembaga</option>
+                                    <option>Belum memilih</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="ukuranseragam">Ukuran Seragam</label></td>
+                            <td>
+                                <select id="ukuranseragam">
+                                    <option>S</option>
+                                    <option>M</option>
+                                    <option>L</option>
+                                    <option>XL</option>
+                                    <option>XXL</option>
+                                    <option>XXXL</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="asalsmp">Asal SMP</label></td>
+                            <td><input type="text" id="asalsmp"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="alamat">Alamat</label></td>
+                            <td><input type="text" id="alamat"></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">
+                                <label for="rt">RT /</label>
+                                <label for="rw"> RW</label>
+                            </td>
 
-                    </fieldset>
+                            <td rowspan="2">
+                                <input type="text" id="rt">
+                                <input type="text" id="rw">
+                            </td>
+
+                        </tr>
+                    </table>
                 </form>
             </div>
         </main>
@@ -208,7 +246,8 @@
                 </div>
             </div>
         </div>
-        <script src=" index.js"></script>
+    </div>
+    <script src=" index.js"></script>
 </body>
 
 </html>
